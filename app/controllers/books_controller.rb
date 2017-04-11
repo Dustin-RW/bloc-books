@@ -1,3 +1,4 @@
+require 'pry'
 require 'book'
 
 class BooksController < BlocWorks::Controller
