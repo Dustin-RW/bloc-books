@@ -14,8 +14,7 @@ class BooksController < BlocWorks::Controller
   end
 
   def show
-    temp = params['id'].to_i
-    book = Book.find(temp)
+    book = Book.find(params['id'].to_i)
     render :show, book: book
   end
 
