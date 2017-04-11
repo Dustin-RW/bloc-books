@@ -15,8 +15,8 @@ class BooksController < BlocWorks::Controller
   end
 
   def show
-    book = Book.find(params['id'].to_i)
-    render :show, book: book
+    binding.pry
+    render :show, book: Book.find("id")
   end
 
   def update
