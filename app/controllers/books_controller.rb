@@ -16,7 +16,6 @@ class BooksController < BlocWorks::Controller
   end
 
   def show
-    binding.pry
     book = Book.find(params['id'].to_i)
     render :show, book: book
   end
