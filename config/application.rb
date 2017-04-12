@@ -1,5 +1,6 @@
 require "bloc_works"
 require "bloc_record"
+require 'pry'
 
 $LOAD_PATH << File.join(File.dirname(__FILE__), "..", "app", "controllers")
 $LOAD_PATH << File.join(File.dirname(__FILE__), "..", "app", "models")

@@ -7,7 +7,8 @@ class BooksController < BlocWorks::Controller
   end
 
   def index
-    render :index, books: Book.all
+    @books = Book.all
+    render :index
   end
 
   def create
@@ -16,7 +17,8 @@ class BooksController < BlocWorks::Controller
 
   def show
     binding.pry
-    render :show, book: Book.find("id")
+    book = Book.find(params['id'].to_i)
+    render :show, book: book
   end
 
   def update

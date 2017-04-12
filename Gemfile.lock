@@ -12,6 +12,7 @@ PATH
     bloc_works (0.1.0)
       bloc_record
       erubis (~> 2.7)
+      pry
 
 GEM
   remote: https://rubygems.org/
